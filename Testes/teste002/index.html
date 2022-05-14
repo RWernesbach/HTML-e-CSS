@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo teste</title>
+    <link rel="shortcut icon" href="html.ico.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+        [type='checkbox'] {
+            margin: 5px 0px 15px 0px;
+        }
+        [type='radio'] {
+            margin: 5px 0px 15px 0px;
+        }
+        .yellow-box {
+            background-color: lightyellow;
+            padding: 10px;
+            margin: 10px;
+        }
+        .silver-box {
+            text-align: center;
+            border-radius: 50px;
+            padding: 10px 20px 10px 20px;
+            margin-top: 10px;
+            margin-right: 400px;
+            margin-bottom: 10px;
+            margin-left: 400px;
+            box-shadow: 0 10px 20px gray, 0 6px 6px gray;
+            line-height: 20px;
+        }
+        .green-box {
+            text-align: center;
+            border-radius: 50%;
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            margin: 20px 400px 20px 400px;
+            box-shadow: 0 10px 20px green, 0 6px 6px green;
+        }
+        #cat-photo-form {
+            background-color: lightgreen;
+        }
+        .silver-background {
+            background-color: silver;
+        }
+        .thick-green-border {
+            border-color: green;
+            border-style: solid;
+            border-width: 10px;
+            border-radius: 50%;
+        }
+        .smaller-image {
+            width: 200px;
+            position: relative;
+            left: 40%;
+            box-shadow: 0 10px 20px lightgreen, 0 6px 6px lightgreen;
+        }
+        h2 {
+            color: blue;
+            font-family: Lobster, monospace;
+        }
+        .red-text {
+            color: red;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 16px;
+            font-family: monospace;
+        }
+        .main-text {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="yellow-box">
+    <h1 class="red-text">Olá, Mundo</h1>
+    <h2>CatPhotoApp</h2>
+    <main>
+        <a href="#footer">Fim da página.</a>
+        <br>
+        <p style="color: red;">Veja mais <a href="https://www.freecatphotoapp.com" target="_blank">fotos de gatos</a>.</p>
+        <br>
+        <a href="#">
+            <img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="Um gatinho laranja deitado.">
+        </a>
+        <br>
+        <p class="main-text">Kitty ipsum dolor sit amet, shed
+            everywhere shed everywhere stretching
+            attack your ankles chase the red dot,
+            hairball run catnip eat the grass sniff.
+        </p>
+        <p class="main-text">Purr jump eat the grass rip the couch
+            scratched sunbathe, shed everywhere
+            rip the couch sleep in the sink fluffy
+            fur catnip scratched.
+        </p>
+        <div class="silver-background silver-box">
+        <p>Coisas que gatos amam:</p>
+            <ul>
+                <li>Leite;</li>
+                <li>Erva de gato;</li>
+                <li>Bola de lã.</li>
+            </ul>
+        <p>Coisas que gatos odeiam:</p>
+            <ol>
+                <li>Banho;</li>
+                <li>Pessoas estranhas;</li>
+                <li>Cortar as unhas ou os pelos.</li>
+            </ol>
+        </div>
+        <form id="cat-photo-form" class="green-box" action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <label for="indoor">
+                <input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked>Caseiro
+            </label>
+            <label for="outdoor">
+                <input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Aventureiro
+            </label>
+            <br>
+            <label for="amável">
+                <input id="amável" type="checkbox" name="personalidade" value="amável" checked>Amável
+            </label>
+            <label for="preguiçoso">
+                <input id="preguiçoso" type="checkbox" name="personalidade" value="preguiçoso">Preguiçoso
+            </label>
+            <label for="enérgico">
+                <input id="enérgico" type="checkbox" name="personalidade" value="enérgico">Enérgico
+            </label>
+            <br>
+            <input type="text" placeholder="Fotos de gatos URL" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer id="footer">Copyright Cat Photo App</footer>
+</body>
+</html>
